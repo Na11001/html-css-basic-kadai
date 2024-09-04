@@ -1,0 +1,28 @@
+:root {
+    font-size: 20px;
+}
+body {
+    font-family: "Arial", "Meiryo", sans-serif;
+}
+.centering_parent{
+    text-align: center;
+}
+h1 {
+    font-family: "Josefin Sans", san-serif;
+    font-size: 200%;
+    letter-spacing: 1.2em;
+    border-bottom: solid 3px rgb(115, 115, 114);
+    text-shadow: 1px 1px 1px gray;
+}
+#basic {
+    font-weight: bold;
+}
+.decoration {
+    font-weight: bold;
+}
+.heading1 {
+    color: rgb(255, 192, 203);
+}
+.heading2 {
+    color: skyblue;
+}
