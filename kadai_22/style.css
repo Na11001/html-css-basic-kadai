@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 3px solid rgb(238, 204, 204);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%
+}
+h1 {
+    margin: 0px;
+    color: rgb(255, 255, 255)
+}
+main {
+    display: flex;
+    justify-content:space-around;
+    margin: 10%;
+    padding: 10px 15px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+h2 {
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122);
+}
+h2::before {
+    content: "●";
+    color: plum;
+}
+p {
+    margin: 0px;
+    font-size: 20px;
+}
+p:nth-of-type(2)::first-letter {
+    font-style: bold;
+    color: rgb(97, 206, 249);
+}
+a {
+    font-size: 20px;
+}
+a:link {
+    color: rgb(255, 255, 255);
+}
+a:visited {
+    color: rgb(193, 234, 251);
+}
+a:hover {
+    color: rgb(245, 178, 168);
+}
+footer {
+    text-align: center;
+    margin: 0px auto 10px;
+    background-color: rgb(244, 79, 79);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+}
+#parent {
+    display: flex;
+    margin: 10px;
+    padding: 10px 15px;
+}
+.contents {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 3px rgb(238, 204, 204);
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0px 20px 0px;
+    box-sizing: border-box;
+}
+.contents img {
+    margin: 10px 0px;
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0px;
+        padding: 0;
+        border: 3px solid rgb(238, 204, 204);
+    }
+    header {
+        background-color: rgb(244, 79, 79);
+        text-align: center;
+        margin: auto 20px;
+        padding: 10px;
+        width: 100%;
+    }
+    h1 {
+        margin: 0px;
+        color: rgb(255, 255, 255)
+    }
+    main {
+        margin: 10px;
+        display: flex;
+        justify-content:space-around;
+    }
+    h2 {
+        font: 30px;
+        border-bottom: dotted 3px rgb(236, 122, 122);
+    }
+    h2::before {
+        content: "●";
+        color: plum;
+    }
+    p {
+        margin: 0px;
+        font-size: 25px;
+    }
+    p:nth-of-type(2)::first-letter {
+        font-style: bold;
+        color: rgb(97, 206, 249);
+    }
+    #parent {
+        display: flex;
+        display: inline;
+        text-align: center; 
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 20px 0;
+        padding: 10px 15px;
+    }
+    .contents {
+        flex-basis: 25%;
+        margin: 10px;   
+    }
+    footer {
+        text-align: center;
+        margin: 10px;
+        background-color: rgb(244, 79,79);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        width: 100%;
+    }
+}
