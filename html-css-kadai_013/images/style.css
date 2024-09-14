@@ -1,19 +1,15 @@
-/* PCスマホ共通スタイル */
-body {
-    font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
-}
 /* ヘッダー */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     }
-
 p {
     font-size: 15px;
 }
 #main-visual > img {
     width: 100%;
+    height: auto;
 }
 @media screen and (min-width: 768px) {
     body {
@@ -28,10 +24,17 @@ p {
         }
     /* ナビゲーションレイアウト */
     #nav-pc {
-        text-align: right;
         font-size: 14px;
-        padding-top: 15px;
         margin-left: auto;
+    }
+    #nav-pc li {
+        display: none;
+        padding: 0;
+    }
+    #nav-pc ul {
+        display: flex;
+        list-style: none;
+        padding-left: 0;
     }
     #nav-pc a:link, 
     #nav-pc a:visited,
@@ -42,34 +45,13 @@ p {
     #menu-sp {
         display: none;
     }
-    #nav-pc ul {
-        list-style: none;
-        display: flex;
-        margin: 0;
-        padding: 0;
-    }
-    #nav-pc li {
-        display: inline;
-        padding: 10px;
-    }
     /* ナビゲーションのリンク装飾設定 */
     #nav-pc > a {
         text-decoration: none;
         margin-left: 20px;
     }
-    #nav-pc > a:link {
-        color: #d0d0d0;
-    }
-    #nav-pc a:hover {
-        color: #d0d0d0;
-        text-decoration: underline;
-    }
     #nav-pc > a:active {
         color: #d0d0d0;
-    }
-    #nav-sp,
-    #menu-sp {
-        display: none;
     }
     /* メインビジュアル */
     #main-visual {
@@ -91,13 +73,6 @@ p {
     #nav-pc {
         display: none;
     }
-    #nav-pc > a {
-        text-decoration: none;
-        margin-left: 20px;
-    }
-    #nav-pc > a:link {
-        color: #d0d0d0;
-    }
     #menu-sp {
         float: right;
         padding: 0;
@@ -112,27 +87,34 @@ p {
         display: none;
         z-index: 100;
     }
-    /* ボタン */
-    #close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        border: none;
-        outline: none;
-        padding: 0;
-        background-color: transparent;
-    }
-    #close img {
-        border: none;
-    }
     #nav-sp ul {
         padding-left: 0;
     }
     #nav-sp li {
         list-style: none;
     }
+    /* ボタン */
+    #close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        border: none;
+        background-color: transparent;
+    }
     #logo-sp {
         margin: 80px 0 30px 20px;
+    }
+    #nav-sp a.menu {
+        text-decoration: none;
+        display: block;
+        padding-right: 20px;
+        margin: 0 20px 0 20px;
+        height: 44px;
+        font-size: 16px;
+        background-image: url("arrow.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+
     }
     #nav-sp a:link,
     #nav-sp a:visited,
@@ -141,15 +123,5 @@ p {
     }
     #nav-sp a:hover {
         text-decoration: underline;
-    }
-    #menu {
-        text-decoration: none;
-        display: block;
-        margin: 20px;
-        font-size: 16px;
-        height: 44px;
-        background-image: url("arrow.png");
-        background-repeat: no-repeat;
-        background-position: right top;
     }
 }
